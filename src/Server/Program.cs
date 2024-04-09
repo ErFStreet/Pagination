@@ -15,8 +15,8 @@ internal class Program
 
 
         var result = new PagedList<string>(
-            page: 1, pageSize: 5, totalCount: 15, items: names).Create();
-            
+            page: 4, pageSize: 5, totalCount: names.Count, items: names).Create();
+
 
         foreach (var name in result)
         {
